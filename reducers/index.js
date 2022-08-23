@@ -1,8 +1,6 @@
-
 import { combineReducers } from "redux"
-
-import project from "./projectReducer"
+import imageReducer from "./imageReducer";
 
 export default combineReducers({
-    project
+    imageReducer,
 })

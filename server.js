@@ -9,11 +9,6 @@ app.prepare()
     .then(() => {
         const server = express()
 
-        server.get('/page', (req, res) => {
-            const queryParams = { title: "Cargado en el server" }
-            app.render(req, res, '/page', queryParams)
-        })
-
         server.get('*', (req, res) => {
             return handle(req, res)
         })

@@ -3,6 +3,8 @@ import {Provider} from "react-redux";
 import App, {Container} from "next/app";
 import withRedux from "next-redux-wrapper";
 import makeStore from '../store';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Popper from '@popperjs/core';
 
 class MyApp extends App {
 
@@ -17,8 +19,11 @@ class MyApp extends App {
             <Container>
                 <link
                     rel="stylesheet"
-                    href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
+                    href="bootstrap/dist/css/bootstrap.min.css"
                 />
+                <link rel="stylesheet" href="css/styles.css" />
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
                 <Provider store={store}>
                     <Component {...pageProps} />
                 </Provider>
