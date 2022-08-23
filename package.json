@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
     "heroku-postbuild": "yarn run build"
   },
   "browserslist": [
