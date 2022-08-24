@@ -15,7 +15,7 @@ const ImageDetails = ({ showDetails, imageDetails, handleClose}) => {
           <Offcanvas.Body>
             <a href={imageDetails.url} style={{justifyContent: 'center'}} target="_blank">
               <img src={imageDetails.download_url} height="250px" />
-              Click here to vist webpage.
+              Click here to visit website.
             </a>
           </Offcanvas.Body>
         </Offcanvas>
